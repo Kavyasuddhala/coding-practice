@@ -21,7 +21,6 @@ data = {
 
 df = pd.DataFrame(data)
 
-
 # 2. Explore the Data
 
 #check first few rows
@@ -63,12 +62,10 @@ X_train, X_test, y_train, y_test = train_test_split(
     X, y, test_size=0.2, random_state=42
 )
 
-
 # 5. Train Multiple Linear Regression Model
 
 model = LinearRegression()
 model.fit(X_train, y_train)
-
 
 # 6. Model Coefficients
 
@@ -79,7 +76,6 @@ print(f"Delivery Time = {model.coef_[0]:.2f} * Distance + "
 print("\nCoefficients Interpretation:")
 print(f"Distance coefficient: {model.coef_[0]:.2f}")
 print(f"Prep time coefficient: {model.coef_[1]:.2f}")
-
 
 # 7. Prediction for Vikram's Question
 
