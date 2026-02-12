@@ -17,15 +17,15 @@ data = {
 
 df = pd.DataFrame(data)
 
-# Explore Data set
+# Explore the Data set
 
-print("First 10 rows")
+# check first few rows
 print(df.head())
 
-print("\nDataset info:")
+#basic info
 print(df.info())
 
-print("\nStatistical summary:")
+# statistical summary
 print(df.describe())
 
 # Visualize CTR vs Views
